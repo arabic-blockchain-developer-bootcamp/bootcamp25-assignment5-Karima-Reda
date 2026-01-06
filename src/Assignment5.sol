@@ -9,7 +9,7 @@ contract Assignment5 {
     bool public isActive;
 
     // 3. Create a public mapping from an address to a string called `userNames`
-    mapping(address => string) public userNames
+    mapping(address => string) public userNamesك
 
     // 4. Define a struct `User` with fields: `id` (uint), `name` (string)
     struct User {
@@ -18,7 +18,7 @@ contract Assignment5 {
     }
 
     // 5. Create a public array of `User` called `users`
-    user[] public users;
+    User[] public users;
 
     // Constructor
     // Initialize `isActive` to true
@@ -32,7 +32,7 @@ contract Assignment5 {
     // This function should:
     // - Be external
     // - Use a for loop to increment `counter` by 1 for 5 iterations
-    function incrementCounter() external return (uint256) {
+    function incrementCounter() external returns (uint256) {
         // Fill in the logic
         for(uint256 i=0; i< 5;i++){
             counter++;
@@ -47,11 +47,11 @@ contract Assignment5 {
     // - Use an if statement to toggle `isActive` between true and false
     function toggleActive() public {
         // Fill in the logic
-        if( isActive == true){
-            isActive = true;
+        if( isActive ){
+            isActive = false;
         }
         else{
-            isActive=false;
+            isActive=true;
         }
         
     }
