@@ -9,7 +9,7 @@ contract Assignment5 {
     bool public isActive;
 
     // 3. Create a public mapping from an address to a string called `userNames`
-    mapping(address => string) public userNamesك
+    mapping(address => string) public userNames;
 
     // 4. Define a struct `User` with fields: `id` (uint), `name` (string)
     struct User {
